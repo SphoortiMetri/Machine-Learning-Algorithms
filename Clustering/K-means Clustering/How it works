@@ -1,0 +1,18 @@
+K- Means clustering
+
+K-means is a very popular clustering algorithm. t scales well to large number of samples and has been used across a large range of application areas in various fields
+
+How it works: 
+1. We first select the number of classes and randomly select data points that are repective groups' center points
+2. By computing the distance between each point and the group center, it then classifies the point to be in the group whose center is the closest 
+3. The group center is then recalculated as the mean of all vectors in the group 
+4. Repeat these steps for a set of iterations or until the group centers don't change much with each iteration 
+5. You can also opt to randomly initialize the group centers a few times, and then select the run that looks like it provided the best results.
+
+Advantages: 
+1. Fast 
+  Linear time - O(n) 
+
+Disadvantages: 
+1. Number of clusters to be known prior to running the algorithm 
+2. Since it randomly selects the group centers, it may not yield consistent results on multiple runs 
